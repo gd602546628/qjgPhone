@@ -3,6 +3,7 @@
  */
 
 let build = 1 // 0生产  1王伟本地测试  2 映射公网测试
+let isTest = true
 let advertMap = {
   0: 'http://47.104.136.67/pgb/',
   1: 'http://172.31.61.85:8182/pgb/',
@@ -10,7 +11,7 @@ let advertMap = {
 }
 let urlMap = {
   0: 'http://47.104.136.67/pg/',
-  1: 'http://172.31.61.40:8181/pg/',
+  1: 'http://172.31.61.85:9000/pg/',
   2: 'http://wangwei.viphk.ngrok.org/pg/'
 }
 let fileMap = {
@@ -33,7 +34,7 @@ let code = {
   SUCCESS: '000000',
   NO_AUTHORITY: '000003' // 无访问权限
 }
-export {uploadUrl, code, urlPre, filePre, build,advertPre}
+export {uploadUrl, code, urlPre, filePre, build, advertPre, isTest}
 
 
 
